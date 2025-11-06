@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    volumes:
+      - .:/app
+      - /app/vendor
+    environment:
+      - APP_ENV=development
+      - APP_DEBUG=true
+    command: ["air", "-c", ".air.toml"] # For hot reloading during development
+
+  postgres:
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./migrations:/docker-entrypoint-initdb.d:ro

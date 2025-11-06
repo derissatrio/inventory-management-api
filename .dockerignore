@@ -1,0 +1,52 @@
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+*.md
+docs/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test files
+*_test.go
+test/
+tests/
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# Claude specific
+.claude/
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Build artifacts
+*.exe
+*.dll
+*.so
+*.dylib
+main
+migrate
+
+# Vendor
+vendor/
